@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Benches{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+
+{% for bench in res %}
+<div>
+    <p>{{ bench }}</p>
+</div>
+{% endfor %}
+
+{% endblock %}
